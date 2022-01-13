@@ -1,0 +1,148 @@
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerito {
+    background-color: yellowgreen;
+    height: 20vh;
+    display: flex;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header Header"
+        "Section1 Section1 Section1"
+        "Section2 Section2 Section2"
+        "Section3 Section3 Section3"
+        "Footer Footer Footer";
+    width: 100%;
+    height: 100%;
+}
+
+.grillainicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header Header Header"
+        "Nav Section1 Section1 Aside"
+        "Nav Section2 Section2 Aside"
+        "Footer Footer Footer Footer";
+}
+
+.Nav {
+    grid-area: Nav;
+    display: flex;
+    background-color: pink;
+    height: 40vh;
+}
+
+.Aside {
+    grid-area: Aside;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 40vh;
+}
+
+.padreFlex {
+    justify-content: left;
+    align-items: stretch;
+    list-style-type: square;
+}
+
+.Header {
+    grid-area: Header;
+    background-color: green;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    transform: skewY(2deg);
+}
+
+.Header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.Header li {
+    margin: 10px 20px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+.Section1 {
+    grid-area: Section1;
+    background-color: yellowgreen;
+    height: 25vh;
+    width: 100%;
+    height: 100%;
+}
+
+.Section2 {
+    grid-area: Section2;
+    background-color: orangered;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Section3 {
+    grid-area: Section3;
+    background-color: paleturquoise;
+    height: 25vh;
+}
+
+h2 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+.Footer {
+    grid-area: Footer;
+    background-color: rebeccapurple;
+    height: 35vh;
+}
+
+div {}
+
+#grad {
+    background-image: linear-gradient(to right, yellow, rgb(255, 0, 157));
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+@media(min-width:460px) {
+    .grilla {
+        background-color: rgb(47, 161, 255);
+    }
+}
+
+@media(min-width:768px) {
+    .grillainicio {
+        background-color: grey;
+    }
+}
