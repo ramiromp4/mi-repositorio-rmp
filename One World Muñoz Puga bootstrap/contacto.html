@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>contacto</title>
+</head>
+
+<body>
+    <header class="container">
+        <!-- segundo paso para crear la estructura es la class row -->
+        <div class="row">
+            <!-- que cada hijo de la row tenga la class col- mas la medida -->
+            <img src="globo.jpg" class="col-md-2" alt="planeta tierra">
+            <h1 class="col-md-10">One World</h1>
+        </div>
+        <br>
+        <div class="row">
+            <p class="col-md-2"><a href="index.html">inicio</a></p>
+            <p class="col-md-2"><a href="">recursos naturales</a></p>
+            <p class="col-md-2"><a href="">clima</a></p>
+            <p class="col-md-2"><a href="">fauna</a></p>
+            <p class="col-md-2"><a href="">contacto</a></p>
+        </div>
+        <br>
+    </header>
+    <div class="container">
+        <h2>Tus datos</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Nombre y Apellido:</label>
+                <input type="name" class="form-control" id="name" placeholder="Ingrese nombre y apellido" name="name">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control" id="number" placeholder="Ingrese edad" name="edad">
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sexo
+                </button>
+                <div class="dropdown-menú">
+                    <a class="dropdown-item" href="#">Mujer</a>
+                    <a class="dropdown-item" href="#">Hombre</a>
+                    <a class="dropdown-item" href="#">No binario</a>
+                    <a class="dropdown-item" href="#">No quiero decirlo</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese e-mail" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese contraseña"
+                    name="password">
+            </div>
+            <div class="form-group">
+                <label for="registro">Registrarme</label>
+                <input type="submit" class="form-control" id="submit" placeholder="Registrarme" name="registro">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
